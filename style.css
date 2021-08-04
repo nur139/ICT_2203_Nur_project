@@ -1,0 +1,311 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#header{
+	height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bgs.jpg);
+      background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+	
+}
+
+.user-box{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.user-box img{
+	border-radius: 50%;
+	width: 250px;
+	border:2px solid #6caed5;
+}
+.user-box h1{
+	color: white;
+	font-weight: bold;
+	margin:10px;
+}
+.user-box p{
+	color: white;
+	
+}
+.scroll-btn{
+	bottom: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	border:2px solid #fff;
+	padding: 10px 10px 20px;
+	border-radius: 30px;
+}
+.scroll-bar span{
+	border:2px solid #fff;
+	font-size: 10px;
+	border-radius: 30px;
+
+}
+.scroll-bar{
+	animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+
+}
+/* navbar section style */
+.nav-bar{
+	top: 0;
+	position: sticky;
+	z-index: 2;
+    font-family:'Open Sans', sans-serif;
+}
+
+.navbar{
+	background-color: rgb(7, 168, 243);
+}
+.navbar-brand img {
+	height: 100px;
+	
+}
+.nav-link{
+	color: #fff !important;
+}
+.nav-bar .fa-bars{
+	font-size: 35px;
+	color: #fff;
+}
+.navbar-toggler{
+	outline: none!important;
+}
+
+
+/* ABOUT section style */
+
+.ABOUT{
+    text-align: center;
+    padding-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 50px 0;
+}
+
+.wrapper{
+    max-width: 100%;
+    width: 90%;
+    margin: 8px auto;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 10px 5px 15px 7px rgba(0,0,0,0.1);
+}
+.profile-img{
+	height: 450px;
+	width: 75%;
+  border-radius: 20px;
+}
+/* SQUAD section style */
+
+.SQUAD{
+    text-align: center;
+    padding-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+  
+}
+
+.wrapper{
+    max-width: 100%;
+    width: 90%;
+    margin: 8px auto;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 10px 5px 15px 7px rgba(0,0,0,0.1);
+}
+#SQUAD {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #SQUAD td, #SQUAD th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #SQUAD tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #SQUAD tr:hover {background-color: #ddd;}
+  
+  #SQUAD th {
+    padding-top: 50px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #10c4f1;
+    color: white;
+  }
+/* news section style */
+.news{
+  text-align: center;
+  padding-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.content .btn{
+  display: block;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #49a6e9,  hsl(214, 86%, 17%));
+  text-decoration: none;
+  padding: 10px 5px;
+  margin-top: 50px;
+  transition: var(--transition);
+}
+
+.content .btn:hover{
+  background: linear-gradient(to left, #49a6e9,  hsl(205, 86%, 17%));
+}
+/* GALLERY section style */
+.gallery{
+  text-align: center;
+  padding-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 25px 0;
+  
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+/* footer section style  */
+
+.create{
+  text-align: center;
+}
+.tittle{
+  text-align: center;
+  color: rgb(197, 164, 15);
+}
+.contact{
+	margin-top: 50px;
+	background-color: #17a2b8;
+	padding: 20px 0;
+	font-family: 'Open Sans', sans-serif;
+  }
+  .contact .contact-content{
+	text-align: center;
+	padding: 5px;
+  }
+  .contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.name, .email{
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--clr-grey-1);
+    padding: 0.5rem;
+    border-radius: 2px;
+    margin-bottom: 2px;
+}
+
+.message{
+    width: 20rem;
+    height: 5rem;
+    font-size: 1rem;
+    border: 2px solid var(--clr-grey-1);
+    border-radius: 2px;
+    margin-bottom: 3px;
+}
+
+.btn-submit{
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--clr-grey-1);
+    background: var(--clr-grey-1);
+    color: var(--clr-grey-10);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.btn-submit:hover{
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 800px){
+    .contact-container{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .address-container{
+        margin-left: 15%;
+        font-size: 1rem;
+    }
+
+    .form-container{
+        display: grid;
+        place-items: center;
+    }
+}
+
